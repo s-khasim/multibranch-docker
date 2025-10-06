@@ -12,7 +12,7 @@ pipeline {
                 sh 'docker tag image2 khasimshaik4/repo:bus'
             }
         }
-        stage('Push') {
+       stage('Push') {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub') {
