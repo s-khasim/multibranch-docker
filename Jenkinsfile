@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh 'docekr push khasimshaik4/repo:bus'
+                        sh 'docker push khasimshaik4/repo:bus'
                     }
                 }
             }
